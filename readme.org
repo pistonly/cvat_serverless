@@ -1,0 +1,2 @@
+* usage
+copy to the same directory structure in cvat
