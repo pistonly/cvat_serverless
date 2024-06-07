@@ -20,7 +20,7 @@ def init_context(context):
     labels = {item['id']: item['name'] for item in json.loads(labels_spec)}
 
     # Read the DL model
-    model = YOLO("/opt/nuclio/common/resource/yolov8/yolov8l.pt")
+    model = YOLO("/yolo_models/yolov8l.pt")
     context.user_data.model = model
     context.user_data.labels = labels
 
